@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="gallary-wrap">
+        <img src="images/back.png" alt="" id="backbtn">
+        <div class="gallary">
+            <div>
+                <span><img src="images/image-1.png" alt=""></span>
+                <span><img src="images/image-2.png" alt=""></span>
+                <span><img src="images/image-3.png" alt=""></span>
+            </div>
+            <div>
+                <span><img src="images/image-4.png" alt=""></span>
+                <span><img src="images/image-5.png" alt=""></span>
+                <span><img src="images/image-6.png" alt=""></span>
+            </div>
+        </div>
+        <img src="images/next.png" alt="" id="nextbtn">
+    </div>
+    <script>
+        let scrollcontainer=document.querySelector(".gallary");
+        let backbtn =document.querySelector("#backbtn");
+        let nextbtn =document.querySelector("#nextbtn");
+
+        scrollcontainer.addEventListener("wheel",(eve)=>{
+            eve.preventDefault();
+            scrollcontainer.scrollLeft+=eve.deltaY;
+            scrollcontainer.style.scrollBehavior="auto";
+        })
+        nextbtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior="smooth";
+            scrollcontainer.scrollLeft += 900;
+        })
+        backbtn.addEventListener("click",()=>{
+            scrollcontainer.style.scrollBehavior="smooth";
+            scrollcontainer.scrollLeft -= 900;
+        })
+    </script>
+</body>
+</html>

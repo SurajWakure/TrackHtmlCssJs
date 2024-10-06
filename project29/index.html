@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <title>Document</title>
+
+    <title>Document</title>
+</head>
+<body>
+    <div class="header">
+        <h1>Image Grill</h1>
+        <p>Click on the button to change gril view</p>
+        <div class="icons">
+            <i class="fa fa-square" onclick="full()"></i>
+            <i class="fa fa-th-large" onclick="twoCol()"></i>
+            <i class="fa fa-th" onclick="fourCol()"></i>
+        </div>
+    </div>
+    <div class="row">
+        <div id="column1">
+            <img src="photos/164036585-avengers-wallpapers.jpg" alt="">
+            <img src="photos/369885.jpg" alt="">
+            <img src="photos/acer01.jpg" alt="">
+            <img src="photos/assorted-hot-air-balloons-photo-during-sunset-670061.jpg" alt="">
+            <img src="photos/autumn-autumn-leaves-blur-close-up-589840.jpg" alt="">
+
+            <img src="photos/benjamin-davies-332625-unsplash.jpg" alt="">
+            <img src="photos/black_tiger.jpg" alt="">
+            <img src="photos/bloom-blossom-flora-36728.jpg" alt="">
+            <img src="photos/bubble-clean-clear-close-up-339119.jpg" alt="">
+            <img src="photos/galaxy.jpg" alt="">
+        </div>
+        <div id="column2">
+             <img src="photos/galaxy2.jpg" alt="">
+            <img src="photos/galaxy3.jpg" alt="">
+            <img src="photos/garrett-parker-247225-unsplash.jpg" alt="">
+            <img src="photos/h-heyerlein-199092-unsplash.jpg" alt="">
+            <img src="photos/hp gold.jpg" alt="">
+
+            <img src="photos/HP OMEN Wallpaper.jpg" alt="">
+            <img src="photos/HP-HD-Wallpapers-06130.jpg" alt="">
+            <img src="photos/img1.JPG" alt="">
+            <img src="photos/img11.jpg" alt="">
+            <img src="photos/img110.jpg" alt="">
+        </div>
+           
+        <div id="column3">
+             <img src="photos/img12.jpg" alt="">
+            <img src="photos/img13.jpg" alt="">
+            <img src="photos/img14.jpg" alt="">
+            <img src="photos/img15.jpg" alt="">
+            <img src="photos/img17.jpg" alt="">
+
+            <img src="photos/img18.jpg" alt="">
+            <img src="photos/img19.jpg" alt="">
+            <img src="photos/img2.jpg" alt="">
+            <img src="photos/img4.jpg" alt="">
+            <img src="photos/img5.jpg" alt="">
+        </div>
+           
+        <div id="column4">
+            <img src="photos/img6.jpg" alt="">
+                    <img src="photos/img7.jpg" alt="">
+                    <img src="photos/LenovoWallPaper.jpg" alt="">
+                    <img src="photos/Lockscree2.jpg" alt="">
+                    <img src="photos/Lockscreen1.jpg" alt="">
+
+                    <img src="photos/Mortal Engines Movie 8K Wallpaper.jpg" alt="">
+                    <img src="photos/MSI Dragon.jpg" alt="">
+                    <img src="photos/RDJ.jpg" alt="">
+                    <img src="photos/sebastiaan-stam-573828-unsplash.jpg" alt="">
+                    <img src="photos/surface.jpg" alt="">   
+        </div>      
+    </div>
+
+    <script>
+        function full(){
+          
+            document.getElementById("column1").style.width='100%';
+            document.getElementById("column2").style.width='100%';
+            document.getElementById("column3").style.width='100%';
+            document.getElementById("column4").style.width='100%';
+            
+        }
+        function twoCol(){
+            document.getElementById("column1").style.width='50%';
+            document.getElementById("column2").style.width='50%';
+            document.getElementById("column3").style.width='50%';
+            document.getElementById("column4").style.width='50%';
+        }
+        function fourCol(){
+            document.getElementById("column1").style.width='25%';
+            document.getElementById("column2").style.width='25%';
+            document.getElementById("column3").style.width='25%';
+            document.getElementById("column4").style.width='25%';
+        }
+    </script>
+</body>
+</html>

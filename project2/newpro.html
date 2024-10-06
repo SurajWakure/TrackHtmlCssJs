@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="newpro.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="product">
+        <div class="product-small-img">
+            <img src="images/happycustomers.jpg" alt="" onclick="myFunction(this)">
+           <img src="images/photorealistic-view-tree-nature-with-branches-trunk_23-2151478081.jpg" alt="" onclick="myFunction(this)">
+            <img src="images/happycustomers.jpg" alt="" onclick="myFunction(this)">
+            <img src="images/happycustomers.jpg" alt="" onclick="myFunction(this)">
+            <img src="images/happycustomers.jpg" alt="" onclick="myFunction(this)">
+        </div>
+        <div class="img-container">
+            <img id="imagebox" src="images/happycustomers.jpg" alt="">
+        </div>
+    </div>
+    <script>
+        function myFunction(smallimg){
+            var fullimg=document.getElementById("imagebox");
+            fullimg.src=smallimg.src;
+
+        }
+    </script>
+</body>
+</html>
